@@ -4,8 +4,7 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
 
 ## About <a name = "about"></a>
 
