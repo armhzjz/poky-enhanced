@@ -7,7 +7,10 @@ else
     echo "Container already exists. Proceeding to install it."
 fi
 
-cp startCropsPokyCont.sh /usr/local/bin
-chmod +x startCropsPokyCont.sh
-
-echo "Installation succeded."
+if [ ! "$1" = "--no-install" ]; then
+    cp startCropsPokyCont.sh /usr/local/bin
+    chmod +x startCropsPokyCont.sh
+    echo "Installation succeded."
+else
+    echo "Docker image built. No installation of starting script was done."
+fi

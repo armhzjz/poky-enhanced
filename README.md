@@ -16,7 +16,7 @@ If you wished to build the container based on other distro or a different ubuntu
 
 To build the container simple:
 ```
-bash build_dockerImage.sh*
+./build_dockerImage.sh*
 ```
 That will build a container called `poky-enhanced:ubuntu18-04`.
 
@@ -32,10 +32,14 @@ The start script uses environment variables I have in my system. These env vars 
 
 ### Installing
 
-If you run the script `install.sh` as sudo, you will install the starting script (i.e. `startCropsPokyCont.sh`) under /usr/local/bin, so you can run the container under any of your projects directories.<br>
-The installation is really optional (I personally run the starting script from my project's folder).
+If you run the script `install.sh`, you will install the starting script (i.e. `startCropsPokyCont.sh`) under `/usr/local/bin`, so you can run the container under any of your projects directories.<br>
 ```
-bash startCropsPokyCont.sh
+./install.sh
+```
+The installation is really optional (I personally run the starting script from my project's folder). If you don't want to place yet another script file under `/usr/local/bin`, simply run the `install.sh` with "--no-install" as argument or alternatively, use the `build_dockerImage.sh` script instead.
+
+```
+./install.sh --no-install
 ```
 
 ## Authors <a name = "authors"></a>
