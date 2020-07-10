@@ -18,7 +18,7 @@ To build the container simple:
 ```
 ./build_dockerImage.sh*
 ```
-That will build a container called `poky-enhanced:ubuntu18-04`.
+That will build an image called `poky-enhanced:ubuntu18-04`.
 
 ### Prerequisites
 
