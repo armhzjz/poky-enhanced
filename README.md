@@ -25,8 +25,7 @@ That will build a container called `poky-enhanced:ubuntu18-04`.
 
 As prerequiste you only need to install [Docker](https://www.docker.com/) locally.
 The start script uses environment variables I have in my system. These env vars are:
- * `YOCTO_DL_DIR` - the location where (during a build ) all source code tarballs are downloaded to
- * `YOCTO_SSTATE_DIR` - the location where yocto will find and/or create the "shared state" files.
+ * `YOCTO_DL_SSTATE` - parent directory of the location where (during a build ) all source code tarballs are downloaded to as well as of the location where yocto will find and/or create the "shared state" files.
 
  Normally these locations should be specified also in your yocto project's local.conf file - otherwise they will not be of use (but that is a yocto related topic you can check [here](https://www.yoctoproject.org/docs/3.1.1/mega-manual/mega-manual.html#var-DL_DIR) and [here](https://www.yoctoproject.org/docs/3.1.1/mega-manual/mega-manual.html#var-SSTATE_DIR)).
 
