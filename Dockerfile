@@ -10,6 +10,8 @@ RUN     set -x && \
         apt-get install -y \
             vim \
             mc \
+            libncurses5-dev \
+            libncursesw5-dev \
             && \
         rm -fr /var/lib/apt/lists/* && \
         :
