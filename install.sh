@@ -2,6 +2,8 @@
 
 set -e
 
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd)"
+
 if [[ "$1" = "--help" || "$1" = "-h" ]]; then
     echo "Build the poky-enhanced image and install \"poky_startContnr\" under"
     echo "/usr/local/bin."
@@ -18,8 +20,8 @@ else
 fi
 
 if [ ! "$1" = "--no-install" ]; then
-    cp ./files/poky_startContnr /usr/local/bin
-    chmod +x poky_startContnr
+    cp ${SCRIPT_DIR}/files/poky_startContnr ${HOME}/bin/
+    chmod +x ${HOME}/bin/poky_startContnr
     echo "Installation succeded."
     echo "'poky_startContnr' can be called from within your top project's path."
 else
