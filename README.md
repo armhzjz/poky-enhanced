@@ -32,11 +32,11 @@ The start script uses environment variables I have in my system. These env vars 
 
 ### Installing
 
-If you run the script `install.sh`, you will install the starting script (i.e. `startCropsPokyCont.sh`) under `/usr/local/bin`, so you can run the container under any of your projects directories.<br>
+If you run the script `install.sh`, you will install the starting script (i.e. `startCropsPokyCont.sh`) under `${HOME}/bin`, so you can run the container under any of your projects directories.<br>
 ```
 ./install.sh
 ```
-The installation is really optional (I personally run the starting script from my project's folder). If you don't want to place yet another script file under `/usr/local/bin`, simply run the `install.sh` with "--no-install" as argument or alternatively, use the `build_dockerImage.sh` script instead.
+The installation is really optional (I personally run the starting script from my project's folder). If you don't want to place yet another script file under `${HOME}/bin`, simply run the `install.sh` with "--no-install" as argument or alternatively, use the `build_dockerImage.sh` script instead.
 
 ```
 ./install.sh --no-install
