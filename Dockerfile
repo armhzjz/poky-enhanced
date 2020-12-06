@@ -1,5 +1,6 @@
 ARG     CROPS_POKY_TAG
 FROM    crops/poky:${CROPS_POKY_TAG}
+MAINTAINER armhzjz
 
 # swtich to root user to install additional packages
 USER    root
@@ -15,5 +16,6 @@ RUN     set -x && \
         rm -fr /var/lib/apt/lists/* && \
         :
 
-# swtich back to regular user
+# switch back to regular user
 USER    usersetup
+

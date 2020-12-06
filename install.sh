@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 if [[ "$1" = "--help" || "$1" = "-h" ]]; then
     echo "Build the poky-enhanced image and install \"poky_startContnr\" under"
     echo "/usr/local/bin."
