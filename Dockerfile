@@ -12,8 +12,15 @@ RUN     set -x && \
             mc \
             libncurses5-dev \
             libncursesw5-dev \
+            python3 \
+            python3-pip \
             && \
         rm -fr /var/lib/apt/lists/* && \
+        :
+
+# install kas
+RUN     set -x && \
+        pip3 install kas && \
         :
 
 # switch back to regular user
