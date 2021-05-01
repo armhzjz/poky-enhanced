@@ -9,4 +9,4 @@ docker run -it --rm --network=host \
     -v ${YOCTO_DL_SSTATE}:/workdir/yocto \
     -v ${HOME}/.gitconfig:/etc/gitconfig  \
     --workdir=/workdir \
-    poky-enhanced:ubuntu-18.04
+    poky-enhanced:ubuntu-20.04

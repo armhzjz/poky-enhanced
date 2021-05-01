@@ -4,9 +4,9 @@ set -e
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd)"
 
-POKY_CONTAINER_TAG=ubuntu-18.04
+POKY_CONTAINER_TAG=ubuntu-20.04
 
-CROPS_POKY_TAG=ubuntu-18.04
+CROPS_POKY_TAG=ubuntu-20.04
 
 DOCKER_BUILD_ARGS=" --build-arg CROPS_POKY_TAG=$CROPS_POKY_TAG \
                     "
