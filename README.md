@@ -46,4 +46,4 @@ The installation is really optional (I personally run the starting script from m
 
 - [@armhzjz](https://github.com/armhzjz)
 
-Any hint or advice on how this could be improved are welcome!
+Any hint or suggestion on how this could be improved are welcome!
