@@ -8,7 +8,7 @@
 
 ## About <a name = "about"></a>
 
-Boils down to a poky container with vim and mc included on it. This container is based on `crops/poky:ubuntu-18.04`. Check [Dockerhub](https://hub.docker.com/r/crops/poky/tags) and the [poky-container repository on Github](https://github.com/crops/poky-container).<br>
+Boils down to a poky container with vim and mc included on it as well as gcc version 10.3. This container is based on `crops/poky:ubuntu-20.04`. Check [Dockerhub](https://hub.docker.com/r/crops/poky/tags) and the [poky-container repository on Github](https://github.com/crops/poky-container).<br>
 If you wished to build the container based on other distro or a different ubuntu version, modify the script `build_dockerImage.sh` accordingly.
 
 ## Getting Started <a name = "getting_started"></a>
