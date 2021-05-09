@@ -14,7 +14,7 @@ fi
 
 # first build  the container if it does not exist already
 if  [[ -z $( docker images | grep poky-enhanced ) ]]; then
-    ./build_dockerImage.sh
+    . "${SCRIPT_DIR}/build_dockerImage.sh"
 else
     echo "Container already exists. Proceeding to install it."
 fi
